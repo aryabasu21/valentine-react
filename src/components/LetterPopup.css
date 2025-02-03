@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+
 .letter-popup-container {
     /* position: relative; */
     text-align: center;
@@ -52,10 +54,11 @@
 }
   
   .letter-content {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 10px;
+    gap: 3px;
     background-color: #f7f7f7;
     padding: 20px;
     border-radius: 10px;
@@ -64,18 +67,83 @@
 
   /* Styling for the letter popup content */
 .letter-content p {
-    font-family: 'Georgia', serif;
-    font-size: 1.2rem;
-    line-height: 1.8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 1.15em;
+    line-height: 1.57;
     color: #333;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     text-align: justify;
+  }
+
+  @media (max-width: 600px) {
+    .letter-content p {
+      font-size: 1em;
+    }
+  }
+
+  .letter-content #dhanda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    bottom: 18%;
+    right: 10%;
+    font-size: 2.5rem;
+    font-weight: bold;
+    transform: rotate(-10deg);
+  }
+
+  .letter-content #dhanda p {
+    margin-top: 10px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    background: linear-gradient(45deg, #fa28cc, #ff00ff, #0000ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  @media (max-width: 600px) {
+    .letter-content #dhanda {
+      position: static;
+      transform: none;
+      display: flex;
+      justify-content: flex-start;
+      height: auto;
+      margin-bottom: 5px;
+      font-size: 1.5rem;
+    }
+
+    .letter-content #dhanda p {
+      font-size: 1.5rem;
+      margin: 0;
+    }
   }
   
   /* Highlight important parts (like names) */
   .highlight {
     font-weight: bold;
+    letter-spacing: 0.1rem;
+    font-size: 1.2rem !important;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #e63946; /* You can change the color */
+  }
+
+  .highlight1 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #e63946;
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 0.08em;
+    margin: 0 !important;
+  }
+
+  @media (max-width: 600px) {
+    .highlight1 {
+      margin: 0 5px !important;
+    }
   }
   
   /* Style for the h2 heading */
@@ -106,4 +174,46 @@
   
   .close-btn:hover {
     background-color: #d32f2f;
+  }
+
+  .volume-slider{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+  }
+
+  .volume-slider input[type="range"] {
+    width: 20%;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 6px;
+    border-radius: 5px;
+    background: #000000;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: opacity 0.2s, background 0.2s;
+    transition: opacity 0.2s, background 0.2s;
+  }
+
+  @media (max-width: 600px) {
+    .volume-slider input[type="range"] {
+      width: 50%;
+    }
+  }
+
+  .volume-slider input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #000000;
+    box-shadow: 0 0 5px 1px #ff2323;
+    background: #ff1100;
+    cursor: pointer;
   }
