@@ -39,7 +39,7 @@ Ensure you have **Node.js** and **npm** installed on your system.
 1. **Clone the repository:**
 
    ```sh
-   git clone https://github.com/your-username/valentines-day-app.git
+   git clone https://github.com/aryabasu21/valentines-day-app.git
    ```
 
 2. **Navigate to the project directory:**
