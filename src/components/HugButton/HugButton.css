@@ -1,0 +1,41 @@
+.hug-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .hug-button {
+    background: #ff4b5c;
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .hug-button:hover {
+    background: #ff6b81;
+  }
+  
+  /* Floating hearts animation */
+  .floating-heart {
+    position: absolute;
+    bottom: 40px;
+    font-size: 2rem;
+    animation: floatUp 2.5s ease-out forwards;
+  }
+  
+  @keyframes floatUp {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+  }

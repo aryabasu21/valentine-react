@@ -1,0 +1,13 @@
+.countdown {
+    margin-top: 20px;
+  }
+  
+  .timer {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 10px;
+  }

@@ -1,0 +1,34 @@
+.heart-background {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1; /* Ensures the hearts stay in the background */
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.heart {
+  width: 30px;
+  height: 30px;
+  background-color: #ff4b5c;
+  clip-path: path("M12 4.419c-2.826-5.695-11.999-4.064-11.999 3.27 0 7.27 9.903 10.938 11.999 15.311 2.096-4.373 12-8.041 12-15.311 0-7.327-9.17-8.972-12-3.27z");
+  animation: float 10s infinite ease-in-out;
+  opacity: 0.7;
+  margin: 5px;
+  position: absolute;
+  top: calc(100% * var(--random-top));
+  left: calc(100% * var(--random-left));
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+  50% {
+    transform: translateY(-100px) rotate(180deg);
+  }
+  100% {
+    transform: translateY(0) rotate(360deg);
+  }
+}
