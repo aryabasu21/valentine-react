@@ -39,13 +39,13 @@ Ensure you have **Node.js** and **npm** installed on your system.
 1. **Clone the repository:**
 
    ```sh
-   git clone https://github.com/aryabasu21/valentines-day-app.git
+   git clone https://github.com/aryabasu21/valentines-react.git
    ```
 
 2. **Navigate to the project directory:**
 
    ```sh
-   cd valentines-day-app
+   cd valentines-react
    ```
 
 3. **Install dependencies:**
@@ -65,7 +65,7 @@ Ensure you have **Node.js** and **npm** installed on your system.
 ## 📂 Project Structure
 
 ```
-📦 valentines-day-app
+📦 valentines-react
 ├── 📂 src
 │   ├── 📂 components
 │   │   ├── 📂 HugButton
@@ -85,7 +85,8 @@ Ensure you have **Node.js** and **npm** installed on your system.
 
 ## 📸 Screenshots
 
-(Add screenshots of the project here)
+![image](https://github.com/user-attachments/assets/28b4afe3-a69d-4625-9a39-198bb838336b)
+
 
 ## 🔥 Future Enhancements
 
