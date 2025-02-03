@@ -20,7 +20,7 @@
     color: white;
   }
   
-  .popup {
+.popup {
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -32,12 +32,24 @@
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     z-index: 1000;
-    max-width: 150%;
+    max-width: auto;
     width: 120%;
     height: 130%;
     text-align: center;
     transition: transform 0.05s ease;
-  }
+}
+
+@media (max-width: 600px) {
+    .popup {
+        width: 90%;
+        height: auto;
+        top: 10px;
+        left: 5%;
+        padding: 10px;
+        overflow-y: auto;
+        max-height: 80vh;
+    }
+}
   
   .letter-content {
     display: flex;
