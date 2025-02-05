@@ -5,6 +5,7 @@ import useAnimation from "./hooks/useAnimation";
 import VideoPlayer from "./components/VideoPlayer/VideoPlayer";
 import LetterPopup from "./components/LetterPopup";
 // import loveSong from "./assets/audio/my-love-song.mp3";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import "./App.css";
 
 const App = () => {
@@ -41,7 +42,7 @@ const App = () => {
         <VideoPlayer />
         <LetterPopup />
         <HugButton />
-
+        <SpeedInsights />
         {/* Audio element with ref to control the audio */}
         {/* <audio ref={audioRef} id="backgroundMusic" loop>
           <source src={loveSong} type="audio/mp3" />
