@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 import { motion } from "framer-motion";
-import loveSong from "../assets/audio/my-love-song.mp3"; // Adjust the path if needed
+import loveSong from "../assets/audio/love-song.mp3"; // Adjust the path if needed
 import "./LetterPopup.css";
 
 const LetterPopup = () => {
@@ -12,7 +12,7 @@ const LetterPopup = () => {
   const handlePopup = () => {
     setShowLetter(true);
     if (audioRef.current) {
-      audioRef.current.currentTime = 20;
+      audioRef.current.currentTime = 31;
       audioRef.current
         .play()
         .then(() => {
